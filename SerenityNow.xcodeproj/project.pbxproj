@@ -11,7 +11,38 @@
 		52E47B381EDB127F00853014 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E47B371EDB127F00853014 /* ViewController.swift */; };
 		52E47B3A1EDB127F00853014 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52E47B391EDB127F00853014 /* Assets.xcassets */; };
 		52E47B3D1EDB127F00853014 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52E47B3B1EDB127F00853014 /* Main.storyboard */; };
+		52E47B4B1EDB12A400853014 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52E47B4A1EDB12A400853014 /* Cocoa.framework */; };
+		52E47B501EDB12A400853014 /* SafariExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E47B4F1EDB12A400853014 /* SafariExtensionHandler.swift */; };
+		52E47B521EDB12A400853014 /* SafariExtensionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E47B511EDB12A400853014 /* SafariExtensionViewController.swift */; };
+		52E47B551EDB12A400853014 /* SafariExtensionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52E47B531EDB12A400853014 /* SafariExtensionViewController.xib */; };
+		52E47B581EDB12A400853014 /* script.js in Resources */ = {isa = PBXBuildFile; fileRef = 52E47B571EDB12A400853014 /* script.js */; };
+		52E47B5D1EDB12A400853014 /* Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 52E47B481EDB12A400853014 /* Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		52E47B671EDB373C00853014 /* gifffer.min.js in Resources */ = {isa = PBXBuildFile; fileRef = 52E47B661EDB373C00853014 /* gifffer.min.js */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		52E47B5B1EDB12A400853014 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52E47B2A1EDB127F00853014 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 52E47B471EDB12A400853014;
+			remoteInfo = Extension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		52E47B611EDB12A400853014 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				52E47B5D1EDB12A400853014 /* Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		52E47B321EDB127F00853014 /* SerenityNow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SerenityNow.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -20,6 +51,15 @@
 		52E47B391EDB127F00853014 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		52E47B3C1EDB127F00853014 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		52E47B3E1EDB127F00853014 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52E47B481EDB12A400853014 /* Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Extension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		52E47B4A1EDB12A400853014 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		52E47B4E1EDB12A400853014 /* Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Extension.entitlements; sourceTree = "<group>"; };
+		52E47B4F1EDB12A400853014 /* SafariExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariExtensionHandler.swift; sourceTree = "<group>"; };
+		52E47B511EDB12A400853014 /* SafariExtensionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariExtensionViewController.swift; sourceTree = "<group>"; };
+		52E47B541EDB12A400853014 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/SafariExtensionViewController.xib; sourceTree = "<group>"; };
+		52E47B561EDB12A400853014 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52E47B571EDB12A400853014 /* script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = script.js; sourceTree = "<group>"; };
+		52E47B661EDB373C00853014 /* gifffer.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = gifffer.min.js; path = ../gifffer/build/gifffer.min.js; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,6 +70,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		52E47B451EDB12A400853014 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52E47B4B1EDB12A400853014 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -37,6 +85,8 @@
 			isa = PBXGroup;
 			children = (
 				52E47B341EDB127F00853014 /* SerenityNow */,
+				52E47B4C1EDB12A400853014 /* Extension */,
+				52E47B491EDB12A400853014 /* Frameworks */,
 				52E47B331EDB127F00853014 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -45,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				52E47B321EDB127F00853014 /* SerenityNow.app */,
+				52E47B481EDB12A400853014 /* Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -61,6 +112,36 @@
 			path = SerenityNow;
 			sourceTree = "<group>";
 		};
+		52E47B491EDB12A400853014 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				52E47B4A1EDB12A400853014 /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		52E47B4C1EDB12A400853014 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				52E47B661EDB373C00853014 /* gifffer.min.js */,
+				52E47B4F1EDB12A400853014 /* SafariExtensionHandler.swift */,
+				52E47B511EDB12A400853014 /* SafariExtensionViewController.swift */,
+				52E47B531EDB12A400853014 /* SafariExtensionViewController.xib */,
+				52E47B561EDB12A400853014 /* Info.plist */,
+				52E47B571EDB12A400853014 /* script.js */,
+				52E47B4D1EDB12A400853014 /* Supporting Files */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		52E47B4D1EDB12A400853014 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				52E47B4E1EDB12A400853014 /* Extension.entitlements */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,15 +152,34 @@
 				52E47B2E1EDB127F00853014 /* Sources */,
 				52E47B2F1EDB127F00853014 /* Frameworks */,
 				52E47B301EDB127F00853014 /* Resources */,
+				52E47B611EDB12A400853014 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				52E47B5C1EDB12A400853014 /* PBXTargetDependency */,
 			);
 			name = SerenityNow;
 			productName = SerenityNow;
 			productReference = 52E47B321EDB127F00853014 /* SerenityNow.app */;
 			productType = "com.apple.product-type.application";
+		};
+		52E47B471EDB12A400853014 /* Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52E47B5E1EDB12A400853014 /* Build configuration list for PBXNativeTarget "Extension" */;
+			buildPhases = (
+				52E47B441EDB12A400853014 /* Sources */,
+				52E47B451EDB12A400853014 /* Frameworks */,
+				52E47B461EDB12A400853014 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Extension;
+			productName = Extension;
+			productReference = 52E47B481EDB12A400853014 /* Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -92,6 +192,11 @@
 				ORGANIZATIONNAME = Bruce32;
 				TargetAttributes = {
 					52E47B311EDB127F00853014 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = UVXX33WP85;
+						ProvisioningStyle = Automatic;
+					};
+					52E47B471EDB12A400853014 = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = UVXX33WP85;
 						ProvisioningStyle = Automatic;
@@ -112,6 +217,7 @@
 			projectRoot = "";
 			targets = (
 				52E47B311EDB127F00853014 /* SerenityNow */,
+				52E47B471EDB12A400853014 /* Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -123,6 +229,16 @@
 			files = (
 				52E47B3A1EDB127F00853014 /* Assets.xcassets in Resources */,
 				52E47B3D1EDB127F00853014 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52E47B461EDB12A400853014 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52E47B671EDB373C00853014 /* gifffer.min.js in Resources */,
+				52E47B551EDB12A400853014 /* SafariExtensionViewController.xib in Resources */,
+				52E47B581EDB12A400853014 /* script.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,7 +254,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		52E47B441EDB12A400853014 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52E47B521EDB12A400853014 /* SafariExtensionViewController.swift in Sources */,
+				52E47B501EDB12A400853014 /* SafariExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		52E47B5C1EDB12A400853014 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 52E47B471EDB12A400853014 /* Extension */;
+			targetProxy = 52E47B5B1EDB12A400853014 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		52E47B3B1EDB127F00853014 /* Main.storyboard */ = {
@@ -147,6 +280,14 @@
 				52E47B3C1EDB127F00853014 /* Base */,
 			);
 			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		52E47B531EDB12A400853014 /* SafariExtensionViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				52E47B541EDB12A400853014 /* Base */,
+			);
+			name = SafariExtensionViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -247,13 +388,16 @@
 		52E47B421EDB127F00853014 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = UVXX33WP85;
 				INFOPLIST_FILE = SerenityNow/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bruce32.SerenityNow;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -261,13 +405,48 @@
 		52E47B431EDB127F00853014 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = UVXX33WP85;
 				INFOPLIST_FILE = SerenityNow/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bruce32.SerenityNow;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		52E47B5F1EDB12A400853014 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Extension/Extension.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				DEVELOPMENT_TEAM = UVXX33WP85;
+				INFOPLIST_FILE = Extension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bruce32.SerenityNow.Extension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		52E47B601EDB12A400853014 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Extension/Extension.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				DEVELOPMENT_TEAM = UVXX33WP85;
+				INFOPLIST_FILE = Extension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bruce32.SerenityNow.Extension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -289,6 +468,14 @@
 			buildConfigurations = (
 				52E47B421EDB127F00853014 /* Debug */,
 				52E47B431EDB127F00853014 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		52E47B5E1EDB12A400853014 /* Build configuration list for PBXNativeTarget "Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52E47B5F1EDB12A400853014 /* Debug */,
+				52E47B601EDB12A400853014 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

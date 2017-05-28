@@ -1,0 +1,3 @@
+[submodule "gifffer"]
+	path = gifffer
+	url = https://github.com/krasimir/gifffer
