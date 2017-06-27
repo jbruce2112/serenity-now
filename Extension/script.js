@@ -1,5 +1,6 @@
+"use strict";
 
-function cleanPage() {
+function pauseGifs() {
 
 	var images = document.body.getElementsByTagName("img");
 
@@ -23,15 +24,6 @@ function cleanPage() {
 		gif.setAttribute("data-gifffer", gif.getAttribute("src"));
 		gif.removeAttribute("src");
 	}
-
-	var videos = document.body.getElementsByTagName("video");
-	for(let video of videos)
-	{
-		video.removeAttribute("autoplay");
-		video.removeAttribute("playsinline");
-		video.removeAttribute("webkit-playsinline");
-		video.setAttribute("preload", "none");
-	}
 	
 	// Load Gifffer
 	Gifffer();
@@ -39,11 +31,11 @@ function cleanPage() {
 
 document.addEventListener("DOMContentLoaded", function(event) {
 
-	cleanPage();
+	pauseGifs();
 
-	// Re-clean when there are element changes in the DOM
+	// Make another pass when there are element changes in the DOM
 	var observer = new MutationObserver(function(mutations) {
-		cleanPage();
+		pauseGifs();
 	});
 
 	var config = { childList: true };
